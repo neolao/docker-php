@@ -1,6 +1,17 @@
 PHP in a Docker container
 =========================
 
+Available modules
+-----------------
+
+- iconv
+- mbstring
+- mcrypt
+- pdo_mysql
+- gd
+
+
+
 tmpfs
 -----
 
