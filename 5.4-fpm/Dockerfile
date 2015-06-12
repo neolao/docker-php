@@ -1,4 +1,5 @@
 FROM php:5.4-fpm
+MAINTAINER neolao <contact@neolao.com>
 
 RUN apt-get update && \
     apt-get install -y \

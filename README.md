@@ -9,7 +9,7 @@ Available modules
 - mcrypt
 - pdo_mysql
 - gd
-
+- phpredis
 
 
 tmpfs
