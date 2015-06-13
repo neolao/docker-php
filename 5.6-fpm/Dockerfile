@@ -14,6 +14,12 @@ RUN apt-get update && \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd
 
+
+# Install APC
+RUN pecl install apc
+RUN echo "extension=apc.so" > /usr/local/etc/php/conf.d/apc.ini
+
+
 # Install phpredis 2.2.7
 WORKDIR /root
 COPY phpredis-2.2.7.zip phpredis-2.2.7.zip

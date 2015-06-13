@@ -10,7 +10,7 @@ Available modules
 - pdo_mysql
 - gd
 - phpredis
-
+- apc
 
 tmpfs
 -----
