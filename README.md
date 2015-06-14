@@ -4,13 +4,17 @@ PHP in a Docker container
 Available modules
 -----------------
 
+- apc
+- bcmath
+- bz2
+- gd
 - iconv
 - mbstring
 - mcrypt
 - pdo_mysql
-- gd
+- pdo_pgsql
+- pdo_sqlite
 - phpredis
-- apc
 
 tmpfs
 -----
