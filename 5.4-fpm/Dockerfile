@@ -25,14 +25,14 @@ RUN docker-php-ext-install mcrypt
 
 # Install PDO
 # RUN apt-get install -y freetds-dev php5-sybase
-RUN docker-php-ext-install pdo 
-RUN docker-php-ext-install pdo_mysql 
+# RUN docker-php-ext-install pdo 
+RUN docker-php-ext-install pdo_mysql
 # RUN docker-php-ext-install pdo_oci
 # RUN docker-php-ext-install pdo_odbc
 RUN apt-get install -y libpq-dev
 RUN docker-php-ext-install pdo_pgsql
-RUN apt-get install -y libsqlite3-dev
-RUN docker-php-ext-install pdo_sqlite
+# RUN apt-get install -y libsqlite3-dev
+# RUN docker-php-ext-install pdo_sqlite
 
 # Install APC
 RUN pecl install apc
