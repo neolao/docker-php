@@ -21,6 +21,7 @@ Available modules
 - mbstring
 - mcrypt
 - memcached
+- mongo
 - mysqlnd
 - pdo_mysql
 - pdo_pgsql

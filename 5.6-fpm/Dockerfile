@@ -74,6 +74,10 @@ RUN tar -xf memcached-2.2.0.tgz -C /usr/src/php/ext/
 RUN rm memcached-2.2.0.tgz
 RUN docker-php-ext-install memcached-2.2.0
 
+# Install mongo
+RUN pecl install mongo
+RUN echo "extension=mongo.so" > /usr/local/etc/php/conf.d/mongo.ini
+
 
 
 # Include the start script
