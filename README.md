@@ -20,6 +20,7 @@ Available modules
 - json
 - mbstring
 - mcrypt
+- memcached
 - mysqlnd
 - pdo_mysql
 - pdo_pgsql
