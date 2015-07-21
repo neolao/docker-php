@@ -78,6 +78,14 @@ RUN docker-php-ext-install memcached-2.2.0
 RUN pecl install mongo
 RUN echo "extension=mongo.so" > /usr/local/etc/php/conf.d/mongo.ini
 
+# Install ftp
+RUN docker-php-ext-install ftp
+
+# Install intl
+RUN apt-get install -y libicu-dev
+RUN pecl install intl
+RUN docker-php-ext-install intl
+
 COPY start.sh /usr/local/bin/start.sh
 RUN chmod +x /usr/local/bin/start.sh
 
