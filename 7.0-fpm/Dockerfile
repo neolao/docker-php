@@ -9,6 +9,10 @@ RUN apt-get update
 #RUN pecl install apc
 #RUN echo "extension=apc.so" > /usr/local/etc/php/conf.d/apc.ini
 
+# Install APCu
+RUN pecl install apcu
+RUN echo "extension=apcu.so" > /usr/local/etc/php/conf.d/apcu.ini
+
 # Install bcmath
 RUN docker-php-ext-install bcmath
 
