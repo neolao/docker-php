@@ -6,8 +6,8 @@ RUN apt-get update
 
 
 # Install APC
-RUN pecl install apc
-RUN echo "extension=apc.so" > /usr/local/etc/php/conf.d/apc.ini
+#RUN pecl install apc
+#RUN echo "extension=apc.so" > /usr/local/etc/php/conf.d/apc.ini
 
 # Install bcmath
 RUN docker-php-ext-install bcmath
@@ -76,8 +76,8 @@ RUN rm memcached-2.2.0.zip
 RUN docker-php-ext-install memcached-2.2.0
 
 # Install mongo
-RUN pecl install mongodb-beta
-RUN echo "extension=mongo.so" > /usr/local/etc/php/conf.d/mongo.ini
+#RUN pecl install mongodb-beta
+#RUN echo "extension=mongo.so" > /usr/local/etc/php/conf.d/mongo.ini
 
 # Install ftp
 RUN docker-php-ext-install ftp
