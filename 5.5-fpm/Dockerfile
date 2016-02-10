@@ -5,10 +5,6 @@ MAINTAINER neolao <contact@neolao.com>
 RUN apt-get update
 
 
-# Install APC
-RUN pecl install apc
-RUN echo "extension=apc.so" > /usr/local/etc/php/conf.d/apc.ini
-
 # Install bcmath
 RUN docker-php-ext-install bcmath
 
@@ -86,7 +82,6 @@ RUN docker-php-ext-install ftp
 RUN apt-get install -y libicu-dev
 RUN pecl install intl
 RUN docker-php-ext-install intl
-
 
 
 COPY start.sh /usr/local/bin/start.sh
