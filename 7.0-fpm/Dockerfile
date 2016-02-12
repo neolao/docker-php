@@ -5,6 +5,9 @@ MAINTAINER neolao <contact@neolao.com>
 RUN apt-get update
 
 
+# Install opcache
+RUN docker-php-ext-install opcache
+
 # Install APCu
 RUN pecl install apcu
 RUN echo "extension=apcu.so" > /usr/local/etc/php/conf.d/apcu.ini

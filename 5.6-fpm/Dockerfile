@@ -5,6 +5,9 @@ MAINTAINER neolao <contact@neolao.com>
 RUN apt-get update
 
 
+# Install opcache
+RUN docker-php-ext-install opcache
+
 # Install bcmath
 RUN docker-php-ext-install bcmath
 
