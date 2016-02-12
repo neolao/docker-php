@@ -49,7 +49,7 @@ RUN docker-php-ext-install pdo_pgsql
 # RUN docker-php-ext-install pdo_sqlite
 
 # Install phpredis 2.2.7
-RUN apt-get install -y unzip php5-dev
+RUN apt-get install -y unzip
 WORKDIR /root
 COPY phpredis-2.2.7.zip phpredis-2.2.7.zip
 RUN unzip phpredis-2.2.7.zip
