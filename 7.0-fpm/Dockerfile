@@ -57,10 +57,8 @@ WORKDIR phpredis-2.2.7
 RUN phpize
 RUN ./configure
 RUN make && make install
-#RUN cp /root/phpredis-2.2.7/modules/redis.so /usr/lib/php7/20131226/
-#RUN echo "extension=redis.so" > /etc/php/mods-available/redis.ini
-#RUN echo "extension=redis.so" > /etc/php/7.0/fpm/conf.d/20-redis.ini
-#RUN echo "extension=redis.so" > /etc/php/7.0/cli/conf.d/20-redis.ini
+#RUN cp /root/phpredis-2.2.7/modules/redis.so /usr/local/lib/php/extensions/no-debug-non-zts-20151012/
+RUN echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini
 
 # Install XSL
 RUN apt-get install -y libxslt-dev
